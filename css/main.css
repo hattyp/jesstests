@@ -285,3 +285,12 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+section {
+  margin: 0 40px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
