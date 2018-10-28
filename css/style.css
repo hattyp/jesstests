@@ -1,0 +1,26 @@
+ul {
+    padding: 0;
+    list-style-type: none;
+    background-color: rebeccapurple;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+li {
+  display: inline;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover{
+  background-color: #C8A2C8;
+}
