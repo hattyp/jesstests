@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <section>
+    <h1>Test 2: Page structure</h1>
+    <p>So for this one we're going to adjust the structure of the page a bit so it's a bit more semantically clear, and so that we can add a footer that sticks to the bottom of the site no matter how tall the page is.</p>
+    <p>Probably the best approach for this is to focus on setting it up on one page first and then copying and pasting it across to the others when you're happy with it. Let's do it in home.html first.</p>
+    <ol>
+      <li>Open the home.html file. Inside the <code>body</code> tags add a <code>div</code> with an id of 'container'. We can use an ID here rather than a class to target this with CSS because there'll only ever be one 'container' element on each page.</li>
+      <li>Inside this 'container' <code>div</code> add opening and closing <code>header</code> tags. Inside these header tags add opening and closing <code>nav</code> tags.</li>
+      <li>Inside these <code>nav</code> tags, cut and paste the <code>ul</code> you made in test1, and delete the <code>section</code> that it used to be contained in.</li>
+      <li>By this point inside the <code>body</code> you should have a <code>div</code> with an ID of 'container', with a <code>header</code> inside of that, with a <code>nav</code> inside of that, with the <code>ul</code> you made last week inside of that! Bit like inception.</li>
+      <li>Save this and check it on the page. It should be looking correct if the navigation you made last week is now the full width of the screen and there's a little gap at the top. This gap is here because by the <code>ul</code> has a margin by default. Reset this by setting it to 0 on the <code>ul</code></li>
+      <li>Neeeeext add an opening and closing <code>main</code> tag inside the 'container' <code>div</code>, but outside and below the <code>header</code> you just made.</li>
+      <li>Neeeeext add an opening and closing <code>footer</code> tag inside the 'container' <code>div</code>, but outside and below the <code>main</code> you just made.</li>
+      <li>If this is massively confusing, <a href="https://internetingishard.com/html-and-css/semantic-html/" target="_blank">this article might be helpful</a>, however if you're pretty happy with what we've done so far you can check it's correct by looking at <a target="_blank" href="img/test2.png">this.</a></li>
+      <li>So now you have a basic structure for your pages with a header, nav, main and footer element. Let's make this a bit clearer now. Add an <code>h1</code> into the <code>main</code> element that just says 'Main' so we can see where the main section is, and add a <code>p</code> into the footer that says 'footer'.</li>
+      <li>In your CSS, change the background colour of the <code>footer</code> to be a solid colour (omg I love the one you've used for the hover states in the navigation! where'd you get it?) and a cheeky bit of padding just so it's clear where the footer is AT.</li>
+      <li>You should be able to see now the footer is sitting the full-width of the page but also just slots up next to the <code>main</code> element. Next we're going to make him STAY at the bottom.</li>
+    </ol>
+  </section>
+
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

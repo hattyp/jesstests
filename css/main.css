@@ -294,3 +294,9 @@ section {
 ol li {
   margin-bottom: 10px;
 }
+
+code {
+  font-weight: bold;
+  background-color: antiquewhite;
+  padding: 2px 4px;
+}
