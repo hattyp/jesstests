@@ -7,3 +7,5 @@
 ## Index
 
 * Test number 1: Navigation
+* Test number 2: Page Structure
+* Test number 3: Footer get down!
