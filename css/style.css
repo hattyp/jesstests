@@ -35,3 +35,8 @@ footer {
   Width: 100%;
 
 }
+
+.useful-links {
+  list-style-type: none;
+  padding: 0;
+}
