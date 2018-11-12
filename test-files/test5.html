@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <section>
+    <h1>Test 5: Flexbox</h1>
+    <p>Excellent branching! This branch has been good to us, but our work here is now done so I've merged it back into the 'develop' branch (i'll talk to you about this in person because it involves a tiny bit of extra faff). If you double click now on the 'develop' branch in SourceTree to skip back over there everything from here will also exist there so let's do some FLEXBOX work.</p>
+    <p>Back in days of yore before Flexbox we had to use either tables or floated elements to organise elements around each other on a page. Flexbox has made all of this a lot easier but it takes some getting used to, so we're going to do some practice 'ere.</p>
+    <ol>
+      <li>In your 'home.html' file first add a 'banner' class to the first <code>section</code> inside the <code>main</code> element. We're gonna turn this into a banner image to bring the site to LIFE!</li>
+      <li>Inside this first <code>section</code> let's add a banner image onto the page. You can find some free imagery here: <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a>. I'd recommend choosing one that is wider than it is tall given that it'll stretch the full width of the page. <a href="https://unsplash.com/photos/gZXx8lKAb7Y" target="_blank">This</a> sort of thing, perhaps?</li>
+      <li>Next click on the image and then click the 'download free' button. Then move this downloaded image into the 'img' folder within the 'Jesstests' folder for this site. That's where we gonn' keep all the images. In the CSS file set the background image for the 'banner' <code>section</code> to be this downloaded image.</li>
+      <li>Also remove the margins on this section, give it a minimum height of 300px and set the 'background-size' property to 'cover' so that the image sits full-width at the top of the page.</li>
+      <li>Plz next copy the entirety of the <code>main</code> element you did last time (so including the sections inside it, the article and aside etc) from your 'home.html' into every page on the site. We gonna style them all at the same time.</li>
+      <li>The <code>main</code> element will become our main flex container, so in the stylesheet make this the parent by making the display property 'flex'. Save this and refresh the page and you'll see the two 'section' elements are now side by side rather than stacked down the page. This is because the default 'flex-direction' style is 'row' - so unless you specify otherwise the elements inside a 'flex' container will appear left-to-right across the page. We want them to appear top-to-bottom down the page so also in the <code>main</code> element styles plz change the 'flex-direction' to be 'column' (so the elements inside it are stacked vertically rather than horizontally)</li>
+      <li>We also want to control the positioning of the elements inside our <code>section</code> elements, so let's make these flex containers too by giving them the 'flex' display property. You can then change the 'margin' of the h1 tag to 'auto' to have the h1 text appear in the middle of the banner at the top too if you'd like.</li>
+      <li>With the second of our <code>section</code> elements however we want the <code>article</code> and the <code>aside</code> to sit side by side, so we wont bother changing the 'flex direction' property, and instead we'll give the <code>article</code> a 'flex-grow' property of 3 and the <code>aside</code> a 'flex-grow' property of '1'</li>
+      <li>We should now have the page looking a bit more websitey with a banner (complete with its own background image) full-width across the top, an <code>article</code> containing a bit of text on the left and an <code>aside</code> sitting on the right of the screen acting like a sidebar might. Does it look like that to you? Is this confusing? Hopefully with the help of <a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">this excellent guide</a> it'll seem clearer than it might first appear to be, but do let me know if any of this waffle is unclear! xx</li>
+    </ol>
+  </section>
+
+
+
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
