@@ -21,8 +21,37 @@
   color: white;
 }
 
-.nav-list li:hover{
+.nav-list li:hover {
   background-color: #C8A2C8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+}
+
+article {
+  flex-grow: 3;
+}
+
+aside {
+  flex-grow: 1;
+}
+
+.banner {
+  background-image: url(../img/bricks.jpg);
+  margin: 0;
+  background-size: cover;
+  min-height: 300px;
+  background-repeat: no-repeat;
 }
 
 footer {
